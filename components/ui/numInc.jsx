@@ -17,7 +17,7 @@ function NumInc({ num, delay = 0 }) {
       duration: 2,
       delay: delay,
     });
-  }, [isInView]);
+  }, [isInView, count, delay, num]);
   return <motion.span ref={ref}>{rounded}</motion.span>;
 }
 
